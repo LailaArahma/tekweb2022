@@ -1,0 +1,21 @@
+{
+  "title": "Laila Nur A.",
+  "description":
+    "Hello my name is Laila Nur Arahmadhani, I'm an Information System's student at Universitas Ahmad Dahlan Yogyakarta.",
+  "social": {
+    "ig": {
+      "url": "https://www.instagram.com/lailnra/",
+      "title": "lailnra"
+    },
+    "github": {
+      "url": "https://github.com/LailaArahma",
+      "title": "LailaArahma"
+    },
+    "yt": {
+      "url": "https://www.youtube.com/channel/UCp2nB45kgsMEPuEDTIIEWYw",
+      "title": "Laila Nur Arahmadhani"
+    }
+  },
+  "imageProfile":
+    "https://raw.githubusercontent.com/LailaArahma/tekweb2022/master/assets/pict.jpg"
+}
