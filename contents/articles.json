@@ -2,7 +2,7 @@
 	{
 		"title":"Deep Learning Bantu Peneliti Identifikasi Bakteri dalam Hitungan Detik",
 		"description": "Deep Learning Bantu Peneliti Identifikasi Bakteri dalam Hitungan Detik",
-		"thumbnail": "https://images.unsplash.com/photo-1563991655280-cb95c90ca2fb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+		"thumbnail": "https://raw.githubusercontent.com/LailaArahma/tekweb2022/master/assets/ML.jpg",
 		"author": "Laila N.A",
 		"published_at": "",
 		"content": "article_1.md"
@@ -10,14 +10,14 @@
 	{
 		"title":"AWS: Skill di Bidang Cloud dan Keamanan Siber Paling Diminati",
 		"description": "AWS: Skill di Bidang Cloud dan Keamanan Siber Paling Diminati",
-		"thumbnail": "https://images.unsplash.com/photo-1563991655280-cb95c90ca2fb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+		"thumbnail": "https://raw.githubusercontent.com/LailaArahma/tekweb2022/master/assets/aws.jpg",
 		"author": "Laila N.A",
 		"published_at": "",
 		"content": "article_2.md"
 	},{
 		"title":"Google Maps Pakai Machine Learning, Blokir 100 Juta Upaya Pengeditan Palsu",
 		"description": "Google menggunakan machine learning untuk memblokir 100 juta upaya pengeditan palsu dan abusif pada profil bisnis di Google Maps.",
-		"thumbnail": "https://images.unsplash.com/photo-1563991655280-cb95c90ca2fb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+		"thumbnail": "https://raw.githubusercontent.com/LailaArahma/tekweb2022/master/assets/maps.jpeg",
 		"author": "Laila N.A",
 		"published_at": "",
 		"content": "article_3.md"
