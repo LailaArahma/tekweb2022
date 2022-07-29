@@ -1,0 +1,460 @@
+#USERS# 
+>Menampilkan data semua pengguna
+
+GET: https://lailaarahma.my.id/api/index.php/users
+
+response:
+[
+  [
+    {
+        "id": "1",
+        "name": "Laila Nur A.",
+        "bio": "Hello my name is Laila Nur Arahmadhani, I'm an Information System's student at Universitas Ahmad Dahlan Yogyakarta.",
+        "ig_url": "https://www.instagram.com/lailnra",
+        "gh_url": "https://github.com/LailaArahma",
+        "lk_url": "https://www.youtube.com/channel/UCp2nB45kgsMEPuEDTIIEWYw",
+        "avatar_url": "https://raw.githubusercontent.com/LailaArahma/tekweb2022/master/assets/pict.jpg",
+        "created_at": null,
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": "8",
+        "name": "Safrina Azzahara",
+        "bio": "Hidup adalah Life",
+        "ig_url": "instagramuser",
+        "gh_url": "githubuser",
+        "lk_url": "linkedinuser",
+        "avatar_url": "https://assets.pikiran-rakyat.com/crop/0x0:0x0/x/photo/2022/01/31/3674460387.jpeg",
+        "created_at": null,
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": "7",
+        "name": "Safrina Azzahara",
+        "bio": "Hidup adalah Life",
+        "ig_url": "instagramuser",
+        "gh_url": "githubuser",
+        "lk_url": "linkedinuser",
+        "avatar_url": "https://assets.pikiran-rakyat.com/crop/0x0:0x0/x/photo/2022/01/31/3674460387.jpeg",
+        "created_at": null,
+        "updated_at": null,
+        "deleted_at": null
+    }
+]
+
+]
+
+Menampilkan data pengguna dengan id tertentu
+
+GET:https://lailaarahma.my.id/api/index.php/users/1
+
+reponse:
+{
+    "id": "1",
+    "name": "Laila Nur A.",
+    "bio": "Hello my name is Laila Nur Arahmadhani, I'm an Information System's student at Universitas Ahmad Dahlan Yogyakarta.",
+    "ig_url": "https://www.instagram.com/lailnra",
+    "gh_url": "https://github.com/LailaArahma",
+    "lk_url": "https://www.youtube.com/channel/UCp2nB45kgsMEPuEDTIIEWYw",
+    "avatar_url": "https://raw.githubusercontent.com/LailaArahma/tekweb2022/master/assets/pict.jpg",
+    "created_at": null,
+    "updated_at": null,
+    "deleted_at": null
+}
+
+
+>Menambahkan data pengguna
+
+POST: https://lailaarahma.my.id/api/index.php/users
+
+body:
+{
+    "name"          : "Safrina Azzahara",
+    "bio"           : "Hidup adalah Life",
+    "ig_url"        : "instagramuser",
+    "gh_url"        : "githubuser",
+    "lk_url"        : "linkedinuser",
+    "avatar_url"    : "https://assets.pikiran-rakyat.com/crop/0x0:0x0/x/photo/2022/01/31/3674460387.jpeg"
+}
+
+response:
+true    // if success
+false   // if failure
+
+>Edit data pengguna
+
+PUT: https://lailaarahma.my.id/api/index.php/users
+
+body:
+{
+  	"id"            : "0",
+    "name"          : "Safrina Azzahro",
+    "bio"           : "Hidup adalah Life",
+    "ig_url"        : "instagramuser",
+    "gh_url"        : "githubuser",
+    "lk_url"        : "linkedinuser",
+    "avatar_url"    : "https://assets.pikiran-rakyat.com/crop/0x0:0x0/x/photo/2022/01/31/3674460387.jpeg"
+}
+
+response:
+true    // if success
+false   // if failure
+
+>Menghapus data anggota
+
+DELETE: https://lailaarahma.my.id/api/index.php/users/2
+
+
+response:
+true    // if success
+false   // if failure
+
+
+
+#Portfolios#
+>Menampilkan semua data portfolio
+
+GET: https://lailaarahma.my.id/api/index.php/portofolio
+
+response:
+[
+   [
+    {
+        "id": "4",
+        "title": "Adobe Photoshop",
+        "author_id": "1",
+        "description": "Learning this one of Adobe family is fun. I do editing photos and design in Photoshop.",
+        "thumbnail_url": "https://lailaarahma.github.io/tekweb2022/assets/pss.png",
+        "project_url": "https://www.behance.net/gallery/137185673/Herbs-Application-Medical-App",
+        "created_at": "2022-07-26 14:06:31",
+        "updated_at": "0000-00-00 00:00:00",
+        "deleted_at": null
+    },
+    {
+        "id": "2",
+        "title": "MySQL Database",
+        "author_id": "1",
+        "description": "MySQL is used to make a database. Since I am still learning about data which needs the SQL to make and execute the database.",
+        "thumbnail_url": "https://lailaarahma.my.id/assets/MySQL.png",
+        "project_url": "https://academy.dqlab.id/Certificate_check_2/resultV2/DQLABDATRCSWMJKL",
+        "created_at": "2022-07-26 14:06:31",
+        "updated_at": "0000-00-00 00:00:00",
+        "deleted_at": null
+    },
+    {
+        "id": "3",
+        "title": "Python Programming Language",
+        "author_id": "1",
+        "description": "Python Programming Language is not just a language used in Back End Programming. It is used in data operation too. Learning the library such like Matplotlib, Pandas, and many more used in data analysis.",
+        "thumbnail_url": "https://lailaarahma.my.id/assets/py.png",
+        "project_url": "https://academy.dqlab.id/Certificate_check_2/resultV2/DQLABDVIZ2BREEKK",
+        "created_at": "2022-07-26 14:06:31",
+        "updated_at": "0000-00-00 00:00:00",
+        "deleted_at": null
+    },
+    {
+        "id": "5",
+        "title": "Figma Design",
+        "author_id": "1",
+        "description": "Figma is the perfect application to do the UI design in mobile interface or landing page. I do the mobile interface UI design and learn the UX through Figma.",
+        "thumbnail_url": "https://lailaarahma.my.id/assets/figma.png",
+        "project_url": "https://www.figma.com/file/SSGmPxjHcQhBH76Rzn1aiP/Herbal-Konsultasi",
+        "created_at": null,
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": "8",
+        "title": "Figma Design",
+        "author_id": "1",
+        "description": "Figma is the perfect application to do the UI design in mobile interface or landing page. I do the mobile interface UI design and learn the UX through Figma.",
+        "thumbnail_url": "https://lailaarahma.my.id/assets/figma.png",
+        "project_url": "https://www.figma.com/file/SSGmPxjHcQhBH76Rzn1aiP/Herbal-Konsultasi",
+        "created_at": null,
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": "9",
+        "title": "Figma Design",
+        "author_id": "1",
+        "description": "Figma is the perfect application to do the UI design in mobile interface or landing page. I do the mobile interface UI design and learn the UX through Figma.",
+        "thumbnail_url": "https://lailaarahma.my.id/assets/figma.png",
+        "project_url": "https://www.figma.com/file/SSGmPxjHcQhBH76Rzn1aiP/Herbal-Konsultasi",
+        "created_at": null,
+        "updated_at": null,
+        "deleted_at": null
+    }
+]
+
+
+>Menampilkan data portfolio berdasdarkan id
+
+GET: https://lailaarahma.my.id/api/index.php/portofolio/2
+
+response:
+
+{
+    "id": "2",
+    "title": "MySQL Database",
+    "author_id": "1",
+    "description": "MySQL is used to make a database. Since I am still learning about data which needs the SQL to make and execute the database.",
+    "thumbnail_url": "https://lailaarahma.my.id/assets/MySQL.png",
+    "project_url": "https://academy.dqlab.id/Certificate_check_2/resultV2/DQLABDATRCSWMJKL",
+    "created_at": "2022-07-26 14:06:31",
+    "updated_at": "0000-00-00 00:00:00",
+    "deleted_at": null
+}
+
+>Menambahkan data portfolio
+
+POST: https://lailaarahma.my.id/api/index.php/portofolio
+
+body:
+{
+    "title": "Figma Design",
+    "author_id": "1",
+    "description": "Figma is the perfect application to do the UI design in mobile interface or landing page. I do the mobile interface UI design and learn the UX through Figma.",
+    "thumbnail_url": "https://lailaarahma.my.id/assets/figma.png",
+    "project_url": "https://www.figma.com/file/SSGmPxjHcQhBH76Rzn1aiP/Herbal-Konsultasi",
+    "created_at": "2022-07-26 14:06:31",
+    "updated_at": "0000-00-00 00:00:00",
+    "deleted_at": null
+}
+
+>Memperbarui data portfolio
+
+PUT: https://lailaarahma.my.id/api/index.php/portofolio
+
+body:
+{
+    "id": "1",
+    "title": "Figma Design",
+    "author_id": "1",
+    "description": "Figma is the perfect application to do the UI design in mobile interface or landing page. I do the mobile interface UI design and learn the UX through Figma.",
+    "thumbnail_url": "https://lailaarahma.my.id/assets/figma.png",
+    "project_url": "https://www.figma.com/file/SSGmPxjHcQhBH76Rzn1aiP/Herbal-Konsultasi",
+    "created_at": "2022-07-26 14:06:31",
+    "updated_at": "0000-00-00 00:00:00",
+    "deleted_at": null
+}
+
+response:
+true    // if success
+false   // if failure
+
+>Menghapus data portfolio
+
+DELETE: https://lailaarahma.my.id/api/index.php/portofolio/7
+
+
+response:
+true    // if success
+false   // if failure
+
+#Articles#
+>Menampilkan data semua artikel
+
+GET: https://lailaarahma.my.id/api/index.php/articles
+
+response:
+[
+    [
+    {
+        "id": "3",
+        "title": "Deep Learning Bantu Peneliti Identifikasi Bakteri dalam Hitungan Detik",
+        "description": "Para peneliti di Korea Advanced Institute of Science and Technology (KAIST) melatih algoritma Deep Learning untuk mengidentifikasi spektrum sidik jari dari komponen molekuler berbagai bakteri.",
+        "content": "article_1.md",
+        "author_id": "1",
+        "thumbnail_url": "https://raw.githubusercontent.com/LailaArahma/tekweb2022/master/assets/ML.jpg",
+        "created_date": "2022-05-29",
+        "created_at": null,
+        "updated_at": "2022-07-26 01:34:07",
+        "deleted_at": null
+    },
+    {
+        "id": "1",
+        "title": "AWS: Skill di Bidang Cloud dan Keamanan Siber Paling Diminati",
+        "description": "Amazon Web Services (AWS) baru saja mengungkap hasil riset terbaru tentang tingginya kebutuhan pelatihan untuk peningkatan kecakapan digital atau skill akibat pandemi.",
+        "content": "article_2.md",
+        "author_id": "1",
+        "thumbnail_url": "https://raw.githubusercontent.com/LailaArahma/tekweb2022/master/assets/aws.jpg",
+        "created_date": "2022-05-29",
+        "created_at": null,
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": "2",
+        "title": "Google Maps Pakai Machine Learning, Blokir 100 Juta Upaya Pengeditan Palsu",
+        "description": "Dalam unggahan ini, Google menyebut pihaknya memakai machine learning dan operator manusia untuk memblokir 100 juta upaya pengeditan palsu dan abusif pada profil bisnis di Google Maps.",
+        "content": "article_3.md",
+        "author_id": "1",
+        "thumbnail_url": "https://raw.githubusercontent.com/LailaArahma/tekweb2022/master/assets/maps.jpeg",
+        "created_date": "2022-05-29",
+        "created_at": null,
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": "7",
+        "title": "Title Artikel",
+        "description": "Para peneliti di Korea Advanced Institute of Science and Technology",
+        "content": "article_4.md",
+        "author_id": "1",
+        "thumbnail_url": "https://raw.githubusercontent.com/LailaArahma/tekweb2022/master/assets/ML.jpg",
+        "created_date": "0000-00-00",
+        "created_at": "2022-07-28 20:03:44",
+        "updated_at": "2022-07-28 20:03:44",
+        "deleted_at": null
+    },
+    {
+        "id": "8",
+        "title": "Title Artikel",
+        "description": "Para peneliti di Korea Advanced Institute of Science and Technology",
+        "content": "article_4.md",
+        "author_id": "1",
+        "thumbnail_url": "https://raw.githubusercontent.com/LailaArahma/tekweb2022/master/assets/ML.jpg",
+        "created_date": "0000-00-00",
+        "created_at": "2022-07-28 20:35:04",
+        "updated_at": "2022-07-28 20:35:04",
+        "deleted_at": null
+    }
+]
+
+>Menampilkan data artikel oleh penulis tertentu
+
+GET: https://lailaarahma.my.id/api/index.php/articles/author/1
+
+response:
+[
+    [
+    {
+        "id": "3",
+        "title": "Deep Learning Bantu Peneliti Identifikasi Bakteri dalam Hitungan Detik",
+        "description": "Para peneliti di Korea Advanced Institute of Science and Technology (KAIST) melatih algoritma Deep Learning untuk mengidentifikasi spektrum sidik jari dari komponen molekuler berbagai bakteri.",
+        "content": "article_1.md",
+        "author_id": "1",
+        "thumbnail_url": "https://raw.githubusercontent.com/LailaArahma/tekweb2022/master/assets/ML.jpg",
+        "created_date": "2022-05-29",
+        "created_at": null,
+        "updated_at": "2022-07-26 01:34:07",
+        "deleted_at": null
+    },
+    {
+        "id": "1",
+        "title": "AWS: Skill di Bidang Cloud dan Keamanan Siber Paling Diminati",
+        "description": "Amazon Web Services (AWS) baru saja mengungkap hasil riset terbaru tentang tingginya kebutuhan pelatihan untuk peningkatan kecakapan digital atau skill akibat pandemi.",
+        "content": "article_2.md",
+        "author_id": "1",
+        "thumbnail_url": "https://raw.githubusercontent.com/LailaArahma/tekweb2022/master/assets/aws.jpg",
+        "created_date": "2022-05-29",
+        "created_at": null,
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": "2",
+        "title": "Google Maps Pakai Machine Learning, Blokir 100 Juta Upaya Pengeditan Palsu",
+        "description": "Dalam unggahan ini, Google menyebut pihaknya memakai machine learning dan operator manusia untuk memblokir 100 juta upaya pengeditan palsu dan abusif pada profil bisnis di Google Maps.",
+        "content": "article_3.md",
+        "author_id": "1",
+        "thumbnail_url": "https://raw.githubusercontent.com/LailaArahma/tekweb2022/master/assets/maps.jpeg",
+        "created_date": "2022-05-29",
+        "created_at": null,
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": "7",
+        "title": "Title Artikel",
+        "description": "Para peneliti di Korea Advanced Institute of Science and Technology",
+        "content": "article_4.md",
+        "author_id": "1",
+        "thumbnail_url": "https://raw.githubusercontent.com/LailaArahma/tekweb2022/master/assets/ML.jpg",
+        "created_date": "0000-00-00",
+        "created_at": "2022-07-28 20:03:44",
+        "updated_at": "2022-07-28 20:03:44",
+        "deleted_at": null
+    },
+    {
+        "id": "8",
+        "title": "Title Artikel",
+        "description": "Para peneliti di Korea Advanced Institute of Science and Technology",
+        "content": "article_4.md",
+        "author_id": "1",
+        "thumbnail_url": "https://raw.githubusercontent.com/LailaArahma/tekweb2022/master/assets/ML.jpg",
+        "created_date": "0000-00-00",
+        "created_at": "2022-07-28 20:35:04",
+        "updated_at": "2022-07-28 20:35:04",
+        "deleted_at": null
+    }
+]
+
+>Menampilkan data artikel dengan id tertentu
+
+GET: https://lailaarahma.my.id/api/index.php/articles/1
+
+response:
+{
+    {
+    "id": "1",
+    "title": "AWS: Skill di Bidang Cloud dan Keamanan Siber Paling Diminati",
+    "description": "Amazon Web Services (AWS) baru saja mengungkap hasil riset terbaru tentang tingginya kebutuhan pelatihan untuk peningkatan kecakapan digital atau skill akibat pandemi.",
+    "content": "article_2.md",
+    "author_id": "1",
+    "thumbnail_url": "https://raw.githubusercontent.com/LailaArahma/tekweb2022/master/assets/aws.jpg",
+    "created_date": "2022-05-29",
+    "created_at": null,
+    "updated_at": null,
+    "deleted_at": null
+}
+
+>Menambahkan artikel
+
+POST: https://lailaarahma.my.id/api/index.php/articles
+
+data:
+{
+    "title"         : "Title Artikel",
+    "description"   : "Para peneliti di Korea Advanced Institute of Science and Technology",
+    "content"       : "article_4.md",
+    "author_id"     : "1",
+    "thumbnail_url" : "https://raw.githubusercontent.com/LailaArahma/tekweb2022/master/assets/ML.jpg",
+    "created_at"    : "2022-05-29"
+}
+
+response:
+true    // if success
+false   // if failure
+
+}
+
+>Memperbarui artikel
+PUT: https://lailaarahma.my.id/api/index.php/articles
+
+data:
+{
+  	"id"            : "4",
+    "title"         : "Ini Titel Artikel",
+    "description"   : "Para peneliti di Korea Advanced Institute of Science and Technology",
+    "content"       : "article_4.md",
+    "author_id"     : "1",
+    "thumbnail_url" : "https://raw.githubusercontent.com/LailaArahma/tekweb2022/master/assets/ML.jpg",
+    "created_at"    : "2022-05-29"
+}
+
+response:
+true    // if success
+false   // if failure
+
+>Menghapus artikel
+
+DELETE: https://lailaarahma.my.id/api/index.php/articles/6
+
+response:
+true    // if success
+false   // if failure
+
