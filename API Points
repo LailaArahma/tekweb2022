@@ -1,10 +1,9 @@
-#USERS# 
+#USERS
 >Menampilkan data semua pengguna
 
 GET: https://lailaarahma.my.id/api/index.php/users
 
 response:
-[
   [
     {
         "id": "1",
@@ -42,8 +41,6 @@ response:
         "updated_at": null,
         "deleted_at": null
     }
-]
-
 ]
 
 Menampilkan data pengguna dengan id tertentu
@@ -119,7 +116,6 @@ false   // if failure
 GET: https://lailaarahma.my.id/api/index.php/portofolio
 
 response:
-[
    [
     {
         "id": "4",
@@ -254,13 +250,12 @@ response:
 true    // if success
 false   // if failure
 
-#Articles#
+#Articles
 >Menampilkan data semua artikel
 
 GET: https://lailaarahma.my.id/api/index.php/articles
 
 response:
-[
     [
     {
         "id": "3",
@@ -329,7 +324,6 @@ response:
 GET: https://lailaarahma.my.id/api/index.php/articles/author/1
 
 response:
-[
     [
     {
         "id": "3",
